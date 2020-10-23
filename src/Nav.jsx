@@ -1,9 +1,19 @@
-import React from 'react'
+
+import React, { useState } from 'react'
+
+import './styles/nav.css'
+
+import Hamburger from './Hamburger'
+import NavLinks from './NavLinks'
 
 export default function Nav () {
   return (
-    
-  <h1>Michael Rua</h1>
-
+    <>
+      <div className='nav'>
+        <h1 id='initials'>MR</h1>
+        <Hamburger />
+      </div>
+      <NavLinks />
+    </>
   )
 }

@@ -1,0 +1,58 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  color: #110C11;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+}
+
+.hero {
+  position: absolute;
+  opacity: 0;
+  font-size: 7rem;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: transparent;
+  text-align: center;
+  transition: opacity 0.5s;
+  -webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: rgb(54, 52, 52);
+}
+
+.hero.show {
+  opacity: 1;
+  transition: opacity 5s;
+}
+
+#myVideo {
+  object-fit: cover;
+  position: fixed;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+.content {
+  padding: 150px 300px;
+}
+
+.content h1 {
+  font-size: 3rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .content {
+    padding: 75px;
+  }
+}

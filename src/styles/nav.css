@@ -1,0 +1,60 @@
+.nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  color: whitesmoke;
+  /* mix-blend-mode: difference; */
+  z-index: 1001;
+}
+
+.nav h1 {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.flyoutMenuLinks {
+  color: whitesmoke;
+  font-size: 2.5rem;
+  position: absolute;
+  text-align: left;
+
+}
+
+.navLinks h1:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.flyoutMenu { /* https://www.kirupa.com/html5/creating_a_smooth_sliding_menu.htm */
+  width: 0px;
+  height: 100vh;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  right: 0;
+  transition: width 0.5s;
+  z-index: 1000;
+  overflow: scroll;
+}
+
+.flyoutMenu.show {
+  width: 500px;
+}
+
+.flyoutMenuLinks {
+  margin-top: 100px;
+  margin-left: 30px;
+}
+
+.flyoutMenuLinks h1:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 700px) {
+  .flyoutMenu.show {
+    width: 100vw;
+  }
+}
