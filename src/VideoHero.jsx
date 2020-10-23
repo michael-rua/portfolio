@@ -16,7 +16,7 @@ export default function VideoHero () {
     <div className='videoHero'> 
       <h1 className={style}>Michael Rua</h1>
       <video playsInline autoPlay muted loop id="myVideo">
-        <source src="/skyVideo.mp4" type="video/mp4" />
+        <source src="/skyBeach.mp4" type="video/mp4" />
       </video> 
     </div>
   )
