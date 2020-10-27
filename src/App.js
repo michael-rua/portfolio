@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link, animateScroll as scroll } from "react-scroll";
 
 import Nav from './Nav'
 import VideoHero from './VideoHero'
