@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react'
+import React from 'react'
 
 import './styles/nav.css'
 
@@ -11,6 +11,7 @@ export default function Nav () {
     <>
       <div className='nav'>
         <h1 id='initials'>MR</h1>
+        
         <Hamburger />
       </div>
       <NavLinks />

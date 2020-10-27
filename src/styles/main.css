@@ -17,12 +17,13 @@ body, html {
 .hero {
   position: absolute;
   opacity: 0;
-  font-size: 7rem;
+  font-size: 6.5rem;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: 'Sansita Swashed', cursive;
-  color: #707070;
+  /* font-family: 'Bellota', cursive; */
+  
   text-align: center;
   transition: opacity 0.5s;
   /* -webkit-text-stroke-width: 2px;
@@ -33,6 +34,7 @@ body, html {
   opacity: 1;
   transition: opacity 5s;
 }
+
 
 #myVideo {
   object-fit: cover;
@@ -52,6 +54,23 @@ body, html {
   font-size: 3rem;
 }
 
+.about {
+  margin-top: 100vh;
+  background-color: whitesmoke;
+}
+.services {
+  background-color: #110C11;
+  color: white;
+}
+
+.work {
+  background-color: white;
+}
+
+.contact {
+  background-color: #2e242c;
+  color: white;
+}
 @media screen and (max-width: 1200px) {
   .content {
     padding: 75px;

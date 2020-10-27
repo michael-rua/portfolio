@@ -5,8 +5,9 @@ import { NavToggleContext } from './NavToggleContext'
 
 
 export default function VideoHero () {
-  const [navToggle, setNavToggle] = useContext(NavToggleContext)
+  const [navToggle, ] = useContext(NavToggleContext)
   const [style, setStyle] = useState('hero')
+
 
   useEffect(() => {
     navToggle ? setStyle('hero') : setStyle('hero show')

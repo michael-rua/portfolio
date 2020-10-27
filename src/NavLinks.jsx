@@ -6,7 +6,7 @@ import './styles/nav.css'
 import { NavToggleContext } from './NavToggleContext'
 
 export default function NavLinks () {
-  const [navToggle, setNavToggle] = useContext(NavToggleContext)
+  const [navToggle, ] = useContext(NavToggleContext)
   const style = navToggle ? 'flyoutMenu show' : 'flyoutMenu'
 
   return(
