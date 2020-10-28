@@ -1,17 +1,21 @@
  
 import React, { useState, useContext} from 'react'
-
+import { Link, animateScroll as scroll } from "react-scroll"
 import { NavToggleContext } from './NavToggleContext'
 
 import './styles/hamburger.css'
 
 export default function Hamburger () {
   const [navToggle, setNavToggle] = useContext(NavToggleContext)
-  const [toggleClass, setToggleClass] = useState('hamburger hamburger--spring')
+  const [toggleClass, setToggleClass] = useState('hamburger hamburger--minus')
 
   const clickHandler = () => {
+    scroll.scrollToTop()
+    
     navToggle ? setNavToggle(false) : setNavToggle(true)
-    toggleClass === 'hamburger hamburger--spring' ? setToggleClass('hamburger hamburger--spring is-active') : setToggleClass('hamburger hamburger--spring')
+    toggleClass === 'hamburger hamburger--minus' ? setToggleClass('hamburger hamburger--minus is-active') : setToggleClass('hamburger hamburger--minus')
+    
+    
   }
 
   return(
