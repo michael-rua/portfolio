@@ -16,18 +16,19 @@ export default function NavLinks () {
         <Link
         //  className='nav h1'
          activeClass="active"
-         to="About"
+         to="about"
          spy={true}
          smooth={true}
          offset={-70}
          duration={500}>
+           
            <h1>About</h1>
         </Link>
 
         <Link
         //  className='nav h1'
          activeClass="active"
-         to="Services"
+         to="services"
          spy={true}
          smooth={true}
          offset={-70}
@@ -38,7 +39,7 @@ export default function NavLinks () {
         <Link 
         // className='nav h1'
         activeClass="active"
-        to="Work"
+        to="work"
         spy={true}
         smooth={true}
         offset={-70}
@@ -49,7 +50,7 @@ export default function NavLinks () {
         <Link 
         // className='nav h1'
         activeClass="active"
-        to="Contact"
+        to="contact"
         spy={true}
         smooth={true}
         offset={-70}

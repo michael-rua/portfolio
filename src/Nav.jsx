@@ -13,7 +13,6 @@ export default function Nav () {
     <>
       <div className='nav'>
         <h1 onClick={scrollToTop} id='initials'>MR</h1>
-        
         <Hamburger />
       </div>
       <NavLinks />

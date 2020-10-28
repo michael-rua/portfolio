@@ -70,6 +70,7 @@ export default function Email () {
         return (
           
           //Form layout that requires a Name, Email, and message
+          <div id='contact'>
           <form className="test-mailing" onSubmit={handleSubmit}>
 
             <br/>
@@ -108,6 +109,7 @@ export default function Email () {
 
             <input type="submit" value="Submit" className="btn btn-outline-light" />
           </form>
+          </div>
         )
 }
     

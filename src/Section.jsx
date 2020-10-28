@@ -1,4 +1,5 @@
 import React from "react";
+import './styles/section.css'
 
 export default function Section({ title, subtitle, dark, id }) {
   return (
