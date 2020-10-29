@@ -100,8 +100,8 @@ export default function Email () {
                   placeholder="Put your message here"
                   required
                   className="email-text-area form-control"
-                  rows="15"
-                  cols="20"
+                  rows="10"
+                  cols="30"
                 />
               </div>
 

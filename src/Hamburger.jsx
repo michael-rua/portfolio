@@ -1,6 +1,6 @@
  
 import React, { useState, useContext} from 'react'
-import { Link, animateScroll as scroll } from "react-scroll"
+// import { animateScroll as scroll } from "react-scroll"
 import { NavToggleContext } from './NavToggleContext'
 
 import './styles/hamburger.css'
@@ -10,7 +10,7 @@ export default function Hamburger () {
   const [toggleClass, setToggleClass] = useState('hamburger hamburger--minus')
 
   const clickHandler = () => {
-    scroll.scrollToTop()
+    // scroll.scrollToTop()
     
     navToggle ? setNavToggle(false) : setNavToggle(true)
     toggleClass === 'hamburger hamburger--minus' ? setToggleClass('hamburger hamburger--minus is-active') : setToggleClass('hamburger hamburger--minus')

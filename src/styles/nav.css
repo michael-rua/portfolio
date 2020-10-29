@@ -4,8 +4,6 @@
   display: flex;
   justify-content: space-between;
   padding: 30px;
-  color: whitesmoke;
-  font-family: 'Sansita Swashed', cursive;
   z-index: 1001;
 }
 
@@ -15,11 +13,20 @@
 }
 
 .flyoutMenuLinks {
-  color: whitesmoke;
+  background: transparent;
   font-size: 2.5rem;
   position: absolute;
   text-align: left;
   font-family: 'Sansita Swashed', cursive;
+  
+ 
+ 
+}
+.h1text {
+  background: inherit;
+  background-clip: text;
+  color: whitesmoke;
+  filter: invert(1) grayscale(1) contrast(9);
 }
 
 .navLinks h1:hover {
@@ -36,7 +43,6 @@
   right: 0;
   transition: width 0.5s;
   z-index: 1000;
-
 }
 
 .flyoutMenu.show {
@@ -53,6 +59,10 @@
   text-decoration: underline;
   /* -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: lightslategray */
+}
+#initials {
+  color: whitesmoke;
+  font-family: 'Sansita Swashed', cursive;
 }
 #initials:hover {
 cursor: pointer;

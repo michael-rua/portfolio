@@ -1,18 +1,4 @@
-.section {
-  /* margin-top: 100vh; */
-  background-color: whitesmoke;
-  padding: 150px 300px;
 
-}
-
-.section-dark {
-  background-color: #333;
-  color: white;
-}
-
-.section h1 {
-  font-size: 3rem;
-}
 .content {
   padding: 150px 300px;
 }
@@ -31,15 +17,10 @@
 }
 
 .work {
-  background-color: white;
+  background-color: whitesmoke;
 }
 @media screen and (max-width: 1200px) {
-  .section {
-    padding: 75px;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .section-dark{
+  .content {
     padding: 75px;
   }
 }
