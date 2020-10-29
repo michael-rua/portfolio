@@ -13,49 +13,55 @@ export default function NavLinks () {
   return(
     <div className={style}>
       <div className='flyoutMenuLinks'>
+      <ul>
+      <li className='nav-item'>
         <Link
-        //  className='nav h1'
-         activeClass="active"
-         to="about"
-         spy={true}
-         smooth={true}
-         offset={-70}
-         duration={500}>
-          <h1 className='h1text'>About</h1>
+          activeClass="active"
+          to="about"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}>
+            About
         </Link>
+        </li>
 
+        <li className='nav-item'>
         <Link
-        //  className='nav h1'
-         activeClass="active"
-         to="services"
-         spy={true}
-         smooth={true}
-         offset={-70}
-         duration={500}>
-           <h1 className='h1text'>Services</h1>
+          activeClass="active"
+          to="services"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}>
+            Services
         </Link>
+        </li>
 
-        <Link 
-        // className='nav h1'
-        activeClass="active"
-        to="work"
-        spy={true}
-        smooth={true}
-        offset={-70}
-        duration={500}>
-          <h1 className='h1text'>Work</h1>
+        <li className='nav-item'>
+        <Link
+          activeClass="active"
+          to="work"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}>
+            Work
         </Link>
+        </li>
 
-        <Link 
-        // className='nav h1'
-        activeClass="active"
-        to="contact"
-        spy={true}
-        smooth={true}
-        offset={-70}
-        duration={500}>
-          <h1 className='h1text'>Contact</h1>
-        </Link>
+        <li className='nav-item'>
+        <Link
+          activeClass="active"
+          to="contact"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}>
+            Contact
+          </Link>
+          </li>
+        </ul>
       </div>
     </div>
   )

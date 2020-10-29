@@ -9,58 +9,53 @@
 /* background-color: black; */
 }
 
+ul {
+  list-style-type: none;
+}
+
 .nav h1 {
   padding-top: 0;
   margin-top: 0;
 }
-
-.flyoutMenuLinks {
-  background: transparent;
-  font-size: 2.5rem;
-  position: absolute;
-  text-align: left;
-  font-family: 'Sansita Swashed', cursive;
-  
-}
-.h1text {
-  
-  
+.nav-item {
+  font-weight: bold;
+  font-size: 5rem;
+  margin-top: 0.67em;
+  margin-bottom: 0.6em;
   color: whitesmoke;
-  
-  mix-blend-mode: difference;
 }
-
-.navLinks h1:hover {
+.nav-item:hover {
   cursor: pointer;
   text-decoration: underline;
 }
 
+.nav-item > .active {
+  text-decoration: underline;
+}
+
+   .flyoutMenuLinks {
+  position: fixed;
+  text-align: left;
+  font-family: 'Sansita Swashed', cursive;
+  margin-top: 5.5rem;
+  
+} 
+
 .flyoutMenu { /* https://www.kirupa.com/html5/creating_a_smooth_sliding_menu.htm */
   width: 0px;
   height: 90vh;
-  background-color: transparent;
   position: fixed;
   top: 0;
   right: 0;
   transition: width 0.5s;
-  z-index: 1000;
+  
+  /* mix-blend-mode: difference; */
 }
 
 .flyoutMenu.show {
   width: 30%;
 }
 
-.flyoutMenuLinks {
-  margin-top: 90px;
-  margin-left: 30px;
-}
-
-.flyoutMenuLinks h1:hover {
-  cursor: pointer;
-  text-decoration: underline;
-  /* -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: lightslategray */
-}
 #initials {
   color: whitesmoke;
   font-family: 'Sansita Swashed', cursive;
@@ -69,7 +64,7 @@
 cursor: pointer;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
   .flyoutMenu.show {
     width: 100vw;
     margin-top: -50px;

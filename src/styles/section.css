@@ -1,6 +1,7 @@
 
 .content {
   padding: 150px 300px;
+  z-index: 0;
 }
 
 .content h1 {
