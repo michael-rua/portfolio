@@ -56,8 +56,21 @@ body, html {
   background-color: #2e242c;
   color: white;
 }
-@media screen and (max-width: 1200px) {
-  .content .{
+@media screen and (max-width: 1024px) {
+  .content {
     padding: 75px;
+  }
+  .hero {
+    position: absolute;
+    opacity: 0;
+    font-size: 5rem;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Sansita Swashed', cursive;
+    /* font-family: 'Bellota', cursive; */
+    order: 1;
+    text-align: center;
+    transition: opacity 0.5s;
   }
 }
