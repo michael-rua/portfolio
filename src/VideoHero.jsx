@@ -19,7 +19,7 @@ export default function VideoHero () {
       <h1 className={style}>Michael Rua</h1>
       <h2 style= {{fontSize: '2rem', top: '54%'}} className={style}>Software Developer | Pilot</h2>
       <video playsInline autoPlay muted loop id="myVideo">
-        <source src="/skyBeach-loop.mp4" type="video/mp4" />
+        <source src="/skyBeach-loop (1).mp4" type="video/mp4" />
       </video> 
     </div>
     </>
