@@ -16,9 +16,11 @@ export default function VideoHero () {
   return(
     <>
     <div className='videoHero'> 
-      <h1 className={style}>Michael Rua</h1>
-      <h2 style= {{fontSize: '2rem', top: '54%'}} className={style}>Software Developer | Pilot</h2>
-      <video playsInline autoPlay muted loop id="myVideo">
+      <div className='titles'>
+        <h1 className={style}>Michael Rua</h1>
+        <h2 style= {{fontSize: '2rem', top: '54%', order: '2'}} className={style}>Software Developer | Pilot</h2>
+      </div>
+      <video playsInline autoPlay muted loop poster='/poster.png'id="myVideo">
         <source src="/skyBeach-loop (1).mp4" type="video/mp4" />
       </video> 
     </div>

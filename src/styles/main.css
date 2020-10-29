@@ -23,7 +23,7 @@ body, html {
   transform: translate(-50%, -50%);
   font-family: 'Sansita Swashed', cursive;
   /* font-family: 'Bellota', cursive; */
-  
+  order: 1;
   text-align: center;
   transition: opacity 0.5s;
   /* -webkit-text-stroke-width: 2px;
@@ -46,14 +46,18 @@ body, html {
   left: 0;
 }
 
-
+.titles {
+  display: flex;
+  flex-direction: column ;
+  justify-content: center;
+}
 
 .contact {
   background-color: #2e242c;
   color: white;
 }
 @media screen and (max-width: 1200px) {
-  .content {
+  .content .{
     padding: 75px;
   }
 }
