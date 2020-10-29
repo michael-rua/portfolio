@@ -5,10 +5,10 @@ import { Link, animateScroll as scroll } from "react-scroll";
 import { NavToggleContext } from './NavToggleContext'
 
 export default function NavLinks () {
-  let [navToggle, ] = useContext(NavToggleContext)
+  const [navToggle, setNavToggle ] = useContext(NavToggleContext)
   const style = navToggle ? 'flyoutMenu show' : 'flyoutMenu'
   
-
+// Link.active ? setNavToggle(false) : setNavToggle(true)
   
   return(
     <div className={style}>

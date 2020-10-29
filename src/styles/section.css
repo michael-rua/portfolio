@@ -19,6 +19,14 @@
 .work {
   background-color: whitesmoke;
 }
+.contact {
+  background-color: #110C11;
+  color: whitesmoke;
+}
+.footer {
+  padding: 25px;
+  background-color: whitesmoke;
+}
 @media screen and (max-width: 1200px) {
   .content {
     padding: 75px;

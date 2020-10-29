@@ -1,6 +1,8 @@
 import React, {useState} from 'react'
 import Swal from 'sweetalert2'
 import emailjs from 'emailjs-com'
+import './styles/section.css'
+
 
 export default function Email () {
     const [state, setState] = useState(
@@ -71,6 +73,7 @@ export default function Email () {
           
           //Form layout that requires a Name, Email, and message
           <div id='contact'>
+             <div className='contact content'>
           <form className="test-mailing" onSubmit={handleSubmit}>
 
             <br/>
@@ -109,6 +112,7 @@ export default function Email () {
 
             <input type="submit" value="Submit" className="btn btn-outline-light" />
           </form>
+          </div>
           </div>
         )
 }
