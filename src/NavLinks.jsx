@@ -20,7 +20,7 @@ export default function NavLinks () {
           to="about"
           spy={true}
           smooth={true}
-          offset={-70}
+          offset={3}
           duration={500}>
             About
         </Link>
@@ -32,7 +32,7 @@ export default function NavLinks () {
           to="services"
           spy={true}
           smooth={true}
-          offset={-70}
+          offset={3}
           duration={500}>
             Services
         </Link>
@@ -44,7 +44,7 @@ export default function NavLinks () {
           to="work"
           spy={true}
           smooth={true}
-          offset={-70}
+          offset={3}
           duration={500}>
             Work
         </Link>
@@ -56,7 +56,7 @@ export default function NavLinks () {
           to="contact"
           spy={true}
           smooth={true}
-          offset={-70}
+          offset={3}
           duration={500}>
             Contact
           </Link>

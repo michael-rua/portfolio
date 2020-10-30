@@ -11,18 +11,31 @@
 .about {
   margin-top: 100vh;
   background-color: gray;
+  height: 80vh;
 }
 .services {
   background-color: #110C11;
   color: whitesmoke;
+  height: 80vh;
 }
 
 .work {
   background-color: gray;
+  height: 80vh;
 }
 .contact {
   background-color: #110C11;
   color: whitesmoke;
+  display: flex;
+  height: 80vh;
+  flex-direction: column;
+}
+.contact-div {
+ display: flex;
+ flex-direction: column;
+ /* justify-content: center; */
+ /* align-content: center; */
+ align-items: left;
 }
 .footer {
   padding: 25px;
