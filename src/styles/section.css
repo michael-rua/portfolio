@@ -11,12 +11,12 @@
 .about {
   margin-top: 100vh;
   background-color: gray;
-  height: 80vh;
+  min-height: 80vh;
 }
 .services {
   background-color: #110C11;
   color: whitesmoke;
-  height: 80vh;
+  min-height: 80vh;
 }
 
 .work {
@@ -27,22 +27,30 @@
   background-color: #110C11;
   color: whitesmoke;
   display: flex;
-  height: 80vh;
+  min-height: 80vh;
   flex-direction: column;
 }
 .contact-div {
+  height: 200px;
  display: flex;
  flex-direction: column;
- /* justify-content: center; */
- /* align-content: center; */
+ justify-content: space-between;
  align-items: left;
 }
+.submit-button {
+  max-width: 70px;
+}
 .footer {
-  padding: 25px;
-  background-color: #110C11;
+ 
+    font-size: .875rem;
+    line-height: 1.125rem;
+    padding: 1.875rem 1.5625rem 3.125rem;
+    -webkit-transition: all .35s ease;
+    transition: all .35s ease;
+  background-color: #f6f8fA;
 }
 @media screen and (max-width: 1200px) {
   .content {
-    padding: 75px;
+    padding: 70px;
   }
 }

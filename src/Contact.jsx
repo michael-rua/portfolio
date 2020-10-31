@@ -65,17 +65,17 @@ export default function Contact() {
     <h5 className='small-text'>You can also send me an email directly from here</h5>
     <form className="contact-form" onSubmit={sendEmail}>
       <div className="contact-div">
-        <div>
+        <div className='form-div'>
       <label>Name</label>
       <br/>
       <input type="text" name="user_name" onChange={nameChange} value={user_name.user_name} required/>
       </div>
-      <div>
+      <div className='form-div'>
       <label>Email</label>
       <br/>
       <input type="email" name="user_email" onChange={emailChange} value={user_email.user_email} required/>
       </div>
-      <div>
+      <div className='form-div'>
       <label>Message</label>
       <br/>
       <textarea
@@ -84,12 +84,12 @@ export default function Contact() {
       required
       onChange={messageChange}
       value={message.message}
-      rows="5"
-      cols="30"  />
+      rows="6"
+      cols="30" 
+      className='text-box' />
       </div>
+      <input className='submit-button'type="submit" value="Send" />
       </div>
-      <input type="submit" value="Send" />
-      
     </form>
     </div>
   </div>
