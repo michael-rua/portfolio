@@ -3,25 +3,29 @@ import React, { useContext } from 'react'
 import './styles/nav.css'
 import { Link, animateScroll as scroll } from "react-scroll";
 import { NavToggleContext } from './NavToggleContext'
+import { NavLinksContext} from './NavLinksContext'
 
 export default function NavLinks () {
   const [navToggle, setNavToggle ] = useContext(NavToggleContext)
-  const style = navToggle ? 'flyoutMenu show' : 'flyoutMenu'
+  const [navLinks, setNavLinks] = useContext(NavLinksContext)
+  let style = navToggle ? 'flyoutMenu show' : 'flyoutMenu'
   
-// Link.active ? setNavToggle(false) : setNavToggle(true)
-  
+  console.log(navLinks)
   return(
     <div className={style}>
       <div className='flyoutMenuLinks'>
       <ul>
-      <li className='nav-item'>
+      <li className='nav-item' >
         <Link
+          className='aboutLink'
           activeClass="active"
           to="about"
           spy={true}
           smooth={true}
           offset={3}
-          duration={500}>
+          duration={500}
+          onClick={() => setNavToggle(false)}
+          >
             About
         </Link>
         </li>
@@ -33,7 +37,8 @@ export default function NavLinks () {
           spy={true}
           smooth={true}
           offset={3}
-          duration={500}>
+          duration={500}
+          onClick={() => setNavToggle(false)}>
             Services
         </Link>
         </li>
@@ -45,7 +50,8 @@ export default function NavLinks () {
           spy={true}
           smooth={true}
           offset={3}
-          duration={500}>
+          duration={500}
+          onClick={() => setNavToggle(false)}>
             Work
         </Link>
         </li>
@@ -57,7 +63,8 @@ export default function NavLinks () {
           spy={true}
           smooth={true}
           offset={3}
-          duration={500}>
+          duration={500}
+          onClick={() => setNavToggle(false)}>
             Contact
           </Link>
           </li>

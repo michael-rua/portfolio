@@ -2,7 +2,7 @@
 import React, { useContext, useState, useEffect } from 'react'
 import './styles/main.css'
 import { NavToggleContext } from './NavToggleContext'
-
+import ArrowDown from './ArrowDown'
 
 export default function VideoHero () {
   const [navToggle, ] = useContext(NavToggleContext)
@@ -24,6 +24,7 @@ export default function VideoHero () {
         <source src="/skyBeach-loop (1).mp4" type="video/mp4" />
       </video> 
     </div>
+    <ArrowDown />
     </>
   )
 }

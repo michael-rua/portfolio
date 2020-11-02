@@ -8,7 +8,6 @@ import Services from './Services'
 import Work from './Work'
 import Contact from './Contact'
 import Footer from './Footer'
-import ArrowDown from './ArrowDown'
 
 function App() {
 
@@ -17,7 +16,7 @@ function App() {
     <div className="App">
       <Nav />
       <VideoHero />
-      <ArrowDown />
+     
       <About/>
       <Services/>
       <Work/>   

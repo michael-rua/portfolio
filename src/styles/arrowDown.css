@@ -3,11 +3,10 @@
   display: flex;
   justify-content: center;
 }
-.downArrow{
-	position: fixed;
+.downArrow {
+	position: absolute;
   bottom: 5%;
-  
-  
+  cursor: pointer;
 }
 .bounce:hover {
 	-moz-animation: bounce 2s infinite;

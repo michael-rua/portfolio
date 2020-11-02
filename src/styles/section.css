@@ -21,7 +21,7 @@
 
 .work {
   background-color: gray;
-  height: 80vh;
+  min-height: 80vh;
 }
 .contact {
   background-color: #110C11;

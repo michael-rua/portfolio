@@ -9,13 +9,14 @@ export default function Nav () {
   const scrollToTop = () => {
     scroll.scrollToTop();
   }
+  
   return (
     <>
       <div className='nav'>
         <h1 onClick={scrollToTop} id='initials'>MR</h1>
         <Hamburger />
       </div>
-      <NavLinks />
+      <NavLinks/>
     </>
   )
 }

@@ -4,11 +4,7 @@ export const NavLinksContext = createContext()
 
 export const NavLinksProvider = ({ children }) => {
   const [navLinks, setNavLinks] = useState({
-    hero: 'false',
-    about: 'false',
-    services: 'false',
-    work: 'fasle',
-    contact: 'false'
+ section: "about"
   })
 
   return (
