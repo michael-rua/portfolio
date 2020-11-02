@@ -3,14 +3,20 @@ import React, { useContext } from 'react'
 import './styles/nav.css'
 import { Link, animateScroll as scroll } from "react-scroll";
 import { NavToggleContext } from './NavToggleContext'
-import { NavLinksContext} from './NavLinksContext'
+import { HamburgerContext } from './HamburgerContext'
 
 export default function NavLinks () {
   const [navToggle, setNavToggle ] = useContext(NavToggleContext)
-  const [navLinks, setNavLinks] = useContext(NavLinksContext)
+  const [toggleClass, setToggleClass] = useContext(HamburgerContext)
   let style = navToggle ? 'flyoutMenu show' : 'flyoutMenu'
   
-  console.log(navLinks)
+  
+  const clickHandler = () => {
+    navToggle ? setNavToggle(false) : setNavToggle(true)
+    toggleClass === 'hamburger hamburger--minus' ? setToggleClass('hamburger hamburger--minus is-active') : setToggleClass('hamburger hamburger--minus')
+    
+  
+  }
   return(
     <div className={style}>
       <div className='flyoutMenuLinks'>
@@ -24,7 +30,7 @@ export default function NavLinks () {
           smooth={true}
           offset={3}
           duration={500}
-          onClick={() => setNavToggle(false)}
+          onClick={() => clickHandler()}
           >
             About
         </Link>
@@ -38,7 +44,7 @@ export default function NavLinks () {
           smooth={true}
           offset={3}
           duration={500}
-          onClick={() => setNavToggle(false)}>
+          onClick={() => clickHandler()}>
             Services
         </Link>
         </li>
@@ -51,7 +57,7 @@ export default function NavLinks () {
           smooth={true}
           offset={3}
           duration={500}
-          onClick={() => setNavToggle(false)}>
+          onClick={() => clickHandler()}>
             Work
         </Link>
         </li>
@@ -64,7 +70,7 @@ export default function NavLinks () {
           smooth={true}
           offset={3}
           duration={500}
-          onClick={() => setNavToggle(false)}>
+          onClick={() => clickHandler()}>
             Contact
           </Link>
           </li>
