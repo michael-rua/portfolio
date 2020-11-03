@@ -88,7 +88,7 @@ export default function Contact() {
       cols="30" 
       className='text-box' />
       </div>
-      <input className='submit-button'type="submit" value="Send" />
+      <button className='submit-button'type="submit">Send</button>
       </div>
     </form>
     </div>
