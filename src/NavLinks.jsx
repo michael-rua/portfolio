@@ -28,7 +28,7 @@ export default function NavLinks () {
           to="about"
           spy={true}
           smooth={true}
-          offset={3}
+          offset={80}
           duration={500}
           onClick={() => clickHandler()}
           >
@@ -42,7 +42,7 @@ export default function NavLinks () {
           to="services"
           spy={true}
           smooth={true}
-          offset={3}
+          offset={80}
           duration={500}
           onClick={() => clickHandler()}>
             Services
@@ -55,7 +55,7 @@ export default function NavLinks () {
           to="work"
           spy={true}
           smooth={true}
-          offset={3}
+          offset={80}
           duration={500}
           onClick={() => clickHandler()}>
             Work
@@ -68,7 +68,7 @@ export default function NavLinks () {
           to="contact"
           spy={true}
           smooth={true}
-          offset={3}
+          offset={80}
           duration={500}
           onClick={() => clickHandler()}>
             Contact

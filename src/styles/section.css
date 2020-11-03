@@ -13,6 +13,11 @@
   background-color: gray;
   min-height: 80vh;
 }
+.about-img {
+  height: 20rem;
+  width: auto;
+  border-radius: 10px;
+}
 .services {
   background-color: #110C11;
   color: whitesmoke;
@@ -20,9 +25,60 @@
 }
 
 .work {
-  background-color: gray;
+  background-color: orange;
   min-height: 80vh;
 }
+.work-img {
+  /* display: flex;
+  justify-content: right;
+  align-items: center; */
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.work-img-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  box-sizing: border-box;
+}
+.work-img-container:hover {
+cursor: pointer;
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.work-img-overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: whitesmoke;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.work-img-container:hover .work-img-overlay {
+  opacity: 1;
+  
+}
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+.reciplan-link:hover {
+text-decoration: underline;
+}
+
 .contact {
   background-color: #110C11;
   color: whitesmoke;
@@ -54,6 +110,10 @@
 @media screen and (max-width: 1200px) {
   .content {
     padding: 70px;
+    
+  }
+  h1 {
+    text-align: center;
   }
   .footer {
     padding: 1rem 1rem 1rem;
