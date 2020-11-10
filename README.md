@@ -4,7 +4,7 @@ This is my current portfolio site, still a WIP although near the end of developm
 
 you can run npm i, then npm start to get the localhost version of the website. 
 
-Otherwise view at **www.michaelrua.dev** for the latest working version.
+Otherwise view at **https://michaelrua.dev/** for the latest working version.
 
 Technology used is, Create-React-App & React & HTML & CSS
 
