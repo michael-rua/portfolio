@@ -161,5 +161,8 @@ text-decoration: underline;
    .contact-info {
     font-size: .7rem;
   }
-   
+  .submit-button {
+    max-width: 70px;
+    height: 30px;
+  }
 }
