@@ -1,6 +1,11 @@
 import React, {useState} from 'react'
 import Swal from 'sweetalert2'
 import emailjs from 'emailjs-com'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMobileAlt } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import './styles/section.css'
 
 import{ init } from 'emailjs-com'
@@ -95,10 +100,14 @@ export default function Contact() {
           </form>
         </div>
         <div className='contact-info'>
-          <p>Phone: 0211560222</p>
-          <p>Email: Michaelrua1@gmail.com</p>
-          <p>LinkedIn: <a style={{textDecoration:'underline'}} target='_blank' rel="noopener noreferrer" href='https://www.linkedin.com/in/michaelrua/'>Michael Rua</a></p>
-          <p>GitHub: <a target='_blank' rel="noopener noreferrer" href='https://github.com/michael-rua'>michael-rua</a></p>
+        
+          <h2><FontAwesomeIcon icon={faMobileAlt} size="lg"/>  0211560222</h2>
+          
+          <h2><FontAwesomeIcon icon={faEnvelope} size="lg"/>  Michaelrua1@gmail.com</h2>
+          
+          <h2><FontAwesomeIcon icon={faLinkedin} size="lg"/> <a target='_blank' rel="noopener noreferrer" href='https://www.linkedin.com/in/michaelrua/'>Michael Rua</a></h2>
+          
+          <h2><FontAwesomeIcon icon={faGithub}  size="lg"/> <a target='_blank' rel="noopener noreferrer" href='https://github.com/michael-rua'>michael-rua</a></h2>
         </div>
       </div>
     </div>

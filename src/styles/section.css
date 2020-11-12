@@ -101,6 +101,12 @@ text-decoration: underline;
   min-height: 80vh;
   flex-direction: column;
 }
+.contact-info {
+  font-size: 1.4rem;
+}
+.contact-title {
+  margin: 0 auto;
+}
 .contact-div {
   height: 200px;
  display: flex;
@@ -111,7 +117,9 @@ text-decoration: underline;
 .contact-container {
  display: flex;
  flex-direction: row;
- justify-content: space-between;
+ justify-content: space-around;
+ align-items: center;
+ margin-top: 10rem;
 }
 .contact-form-container {
   order: 2;
@@ -143,4 +151,15 @@ text-decoration: underline;
   .footer {
     padding: 1rem 1rem 1rem;
   }
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5rem;
+   }
+   .contact-info {
+    font-size: .7rem;
+  }
+   
 }
