@@ -61,39 +61,49 @@ export default function Contact() {
     
   <div id='contact'>
     <div className='contact content'>
-    <h1>Contact</h1>
-    <h5 className='small-text'>You can also send me an email directly from here</h5>
-    <form className="contact-form" onSubmit={sendEmail}>
-      <div className="contact-div">
-        <div className='form-div'>
-      <label>Name</label>
-      <br/>
-      <input type="text" name="user_name" onChange={nameChange} value={user_name.user_name} required/>
+    <h1 className='contact-title'>Contact</h1>
+      <div className='contact-container'>
+        <div className='contact-form-container'>
+          <h5 className='small-text'>You can also send me an email directly from here</h5>
+          <form className="contact-form" onSubmit={sendEmail}>
+            <div className="contact-div">
+              <div className='form-div'>
+                <label>Name</label>
+                <br/>
+                <input type="text" name="user_name" onChange={nameChange} value={user_name.user_name} required/>
+              </div>
+              <div className='form-div'>
+                <label>Email</label>
+                <br/>
+                <input type="email" name="user_email" onChange={emailChange} value={user_email.user_email} required/>
+              </div>
+              <div className='form-div'>
+                <label>Message</label>
+                <br/>
+                <textarea
+                  name="message" 
+                  placeholder="Put your message here" 
+                  required
+                  onChange={messageChange}
+                  value={message.message}
+                  rows="6"
+                  cols="30" 
+                  className='text-box' />
+              </div>
+              <button className='submit-button'type="submit">Send</button>
+            </div>
+          </form>
+        </div>
+        <div className='contact-info'>
+          <p>Phone: 0211560222</p>
+          <p>Email: Michaelrua1@gmail.com</p>
+          <p>LinkedIn: <a style={{textDecoration:'underline'}} target='_blank' rel="noopener noreferrer" href='https://www.linkedin.com/in/michaelrua/'>Michael Rua</a></p>
+          <p>GitHub: <a target='_blank' rel="noopener noreferrer" href='https://github.com/michael-rua'>michael-rua</a></p>
+        </div>
       </div>
-      <div className='form-div'>
-      <label>Email</label>
-      <br/>
-      <input type="email" name="user_email" onChange={emailChange} value={user_email.user_email} required/>
-      </div>
-      <div className='form-div'>
-      <label>Message</label>
-      <br/>
-      <textarea
-      name="message" 
-      placeholder="Put your message here" 
-      required
-      onChange={messageChange}
-      value={message.message}
-      rows="6"
-      cols="30" 
-      className='text-box' />
-      </div>
-      <button className='submit-button'type="submit">Send</button>
-      </div>
-    </form>
     </div>
   </div>
   </>
   )
-}   
+}     
 

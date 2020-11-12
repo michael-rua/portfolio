@@ -7,17 +7,32 @@
 .content h1 {
   font-size: 3rem;
 }
+/* ABOUT */
 
 .about {
   margin-top: 100vh;
   background-color: gray;
   min-height: 80vh;
+
 }
 .about-img {
   height: 20rem;
   width: auto;
   border-radius: 10px;
 }
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+}
+.left-about-section {
+  
+}
+.right-about-section {
+  
+}
+
+/* SERVICES */
 .services {
   background-color: #110C11;
   color: whitesmoke;
@@ -93,6 +108,17 @@ text-decoration: underline;
  justify-content: space-between;
  align-items: left;
 }
+.contact-container {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+}
+.contact-form-container {
+  order: 2;
+}
+.contact-info {
+  order: 1;
+}
 .submit-button {
   max-width: 70px;
   
@@ -101,7 +127,6 @@ text-decoration: underline;
     display: flex;
     justify-content: space-around;
     font-size: 1.5rem;
-    /* line-height: 1rem; */
     padding: 1.5rem 1.2rem 1.5rem;
     -webkit-transition: all .35s ease;
     transition: all .35s ease;
