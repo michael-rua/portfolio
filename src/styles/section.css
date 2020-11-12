@@ -128,8 +128,9 @@ text-decoration: underline;
   order: 1;
 }
 .submit-button {
+  font-size: 1rem;
   max-width: 70px;
-  
+  height: 30px;
 }
 .footer {
     display: flex;
@@ -161,8 +162,5 @@ text-decoration: underline;
    .contact-info {
     font-size: .7rem;
   }
-  .submit-button {
-    max-width: 70px;
-    height: 30px;
-  }
+  
 }
