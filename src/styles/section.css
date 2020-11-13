@@ -42,12 +42,16 @@
 /* WORK */
 
 .work-title {
-  margin: 0 auto;
+  text-align: center;
 }
 .work {
   background-color:  gray;
   min-height: 80vh;
+}
+.work-container {
   display: flex;
+  flex-direction: row;
+
 }
 .work-img {
   /* display: flex;
@@ -59,8 +63,7 @@
   border-radius: 50px;
 }
 .work-img-container {
-  position: relative;
-  width: 100%;
+  display: flex;
   max-width: 300px;
   box-sizing: border-box;
   border-radius: 50px;
@@ -73,18 +76,22 @@ cursor: pointer;
 }
 
 .work-img-overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
-  bottom: 0;
+  bottom: 10px;
   background: rgb(0, 0, 0);
   background: rgba(0, 0, 0, 0.5); /* Black see-through */
   color: #f1f1f1;
   width: 100%;
+  margin:0 auto;
   transition: .5s ease;
   opacity:0;
   color: whitesmoke;
   font-size: 20px;
   padding: 10px;
-  text-align: center;
+  
   box-sizing: border-box;
   border-radius: 50px;
 }
@@ -114,7 +121,7 @@ text-decoration: underline;
   font-size: 1rem;
 }
 .contact-title {
-  margin: 0 auto;
+  text-align: center;
 }
 .contact-div {
   height: 200px;
