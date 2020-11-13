@@ -101,9 +101,9 @@ export default function Contact() {
         </div>
         <div className='contact-info'>
         
-          <h2><FontAwesomeIcon icon={faMobileAlt} size="lg"/>  0211560222</h2>
+          <h2><FontAwesomeIcon icon={faMobileAlt} size="lg"/> <a href='tel:+64-211560222'> 0211560222</a></h2>
           
-          <h2><FontAwesomeIcon icon={faEnvelope} size="lg"/>  Michaelrua1@gmail.com</h2>
+          <h2><FontAwesomeIcon icon={faEnvelope} size="lg"/> <a target='_blank' rel="noopener noreferrer" href="mailto:michaelrua1@gmail.com"> Michaelrua1@gmail.com</a></h2>
           
           <h2><FontAwesomeIcon icon={faLinkedin} size="lg"/> <a target='_blank' rel="noopener noreferrer" href='https://www.linkedin.com/in/michaelrua/'>Michael Rua</a></h2>
           

@@ -39,9 +39,15 @@
   min-height: 80vh;
 }
 
+/* WORK */
+
+.work-title {
+  margin: 0 auto;
+}
 .work {
   background-color:  gray;
   min-height: 80vh;
+  display: flex;
 }
 .work-img {
   /* display: flex;
@@ -50,17 +56,19 @@
   display: block;
   width: 100%;
   height: auto;
-  border-radius: 5px;
+  border-radius: 50px;
 }
 .work-img-container {
   position: relative;
   width: 100%;
-  max-width: 800px;
+  max-width: 300px;
   box-sizing: border-box;
+  border-radius: 50px;
 }
 .work-img-container:hover {
 cursor: pointer;
-  transform: scale(1.1);
+  transform: scale(1.05);
+  transition-duration: .3s;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -75,9 +83,10 @@ cursor: pointer;
   opacity:0;
   color: whitesmoke;
   font-size: 20px;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
   box-sizing: border-box;
+  border-radius: 50px;
 }
 
 .work-img-container:hover .work-img-overlay {
