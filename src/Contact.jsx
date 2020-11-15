@@ -1,6 +1,11 @@
 import React, {useState} from 'react'
 import Swal from 'sweetalert2'
 import emailjs from 'emailjs-com'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMobileAlt } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import './styles/section.css'
 
 import{ init } from 'emailjs-com'
@@ -61,39 +66,54 @@ export default function Contact() {
     
   <div id='contact'>
     <div className='contact content'>
-    <h1>Contact</h1>
-    <h5 className='small-text'>You can also send me an email directly from here</h5>
-    <form className="contact-form" onSubmit={sendEmail}>
-      <div className="contact-div">
-        <div className='form-div'>
-      <label>Name</label>
-      <br/>
-      <input type="text" name="user_name" onChange={nameChange} value={user_name.user_name} required/>
+    <h1 className='contact-title'>Contact</h1>
+      <div className='contact-container'>
+        <div className='contact-form-container'>
+          <h5 className='small-text'>You can also send me an email directly from here</h5>
+          <form className="contact-form" onSubmit={sendEmail}>
+            <div className="contact-div">
+              <div className='form-div'>
+                <label>Name</label>
+                <br/>
+                <input type="text" name="user_name" onChange={nameChange} value={user_name.user_name} required/>
+              </div>
+              <div className='form-div'>
+                <label>Email</label>
+                <br/>
+                <input type="email" name="user_email" onChange={emailChange} value={user_email.user_email} required/>
+              </div>
+              <div className='form-div'>
+                <label>Message</label>
+                <br/>
+                <textarea
+                  name="message" 
+                  placeholder="Put your message here" 
+                  required
+                  onChange={messageChange}
+                  value={message.message}
+                  rows="6"
+                  cols="30" 
+                  className='text-box' />
+              </div>
+              <button className='submit-button'type="submit">Send</button>
+            </div>
+          </form>
+        </div>
+        <div className='contact-info'>
+        
+          <h2><FontAwesomeIcon icon={faMobileAlt} size="lg"/> <a href='tel:+64-211560222'> 0211560222</a></h2>
+          
+          <h2><FontAwesomeIcon icon={faEnvelope} size="lg"/> <a target='_blank' rel="noopener noreferrer" href="mailto:michaelrua1@gmail.com"> Michaelrua1@gmail.com</a></h2>
+          
+          <h2><FontAwesomeIcon icon={faLinkedin} size="lg"/> <a target='_blank' rel="noopener noreferrer" href='https://www.linkedin.com/in/michaelrua/'>Michael Rua</a></h2>
+          
+          <h2><FontAwesomeIcon icon={faGithub}  size="lg"/> <a target='_blank' rel="noopener noreferrer" href='https://github.com/michael-rua'>michael-rua</a></h2>
+        </div>
       </div>
-      <div className='form-div'>
-      <label>Email</label>
-      <br/>
-      <input type="email" name="user_email" onChange={emailChange} value={user_email.user_email} required/>
-      </div>
-      <div className='form-div'>
-      <label>Message</label>
-      <br/>
-      <textarea
-      name="message" 
-      placeholder="Put your message here" 
-      required
-      onChange={messageChange}
-      value={message.message}
-      rows="6"
-      cols="30" 
-      className='text-box' />
-      </div>
-      <button className='submit-button'type="submit">Send</button>
-      </div>
-    </form>
     </div>
   </div>
   </>
   )
-}   
+}     
+  
 
