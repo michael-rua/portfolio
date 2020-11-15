@@ -74,29 +74,63 @@ a, a:hover, a:focus, a:active {
   text-decoration: none;
   color: inherit;
 }
-
 .reciplan-link:hover {
-text-decoration: underline;
-}
-
-.contact {
-  background-color: #110C11;
-  color: whitesmoke;
-  display: flex;
-  min-height: 80vh;
-  flex-direction: column;
-}
-.contact-div {
-  height: 200px;
- display: flex;
- flex-direction: column;
- justify-content: space-between;
- align-items: left;
-}
-.submit-button {
-  max-width: 70px;
+  text-decoration: underline;
+  }
   
-}
+  .contact {
+    background-color: #110C11;
+    color: whitesmoke;
+    display: flex;
+    min-height: 80vh;
+    flex-direction: column;
+  }
+  .contact-info {
+    font-size: 1rem;
+  }
+  .contact-title {
+    text-align: center;
+  }
+  .contact-div {
+    height: 200px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: left;
+  }
+  .contact-container {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+   margin-top: 10rem;
+  }
+  .contact-form-container {
+    order: 2;
+  }
+  .contact-info {
+    order: 1;
+  }
+  .submit-button {
+    font-size: 1rem;
+    max-width: 70px;
+    height: 30px;
+    background-color: whitesmoke;
+    border-color: grey;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5px;
+  }
+  .submit-button:hover {
+    cursor: pointer;
+    background-color: grey;
+    color: whitesmoke;
+    border-color: grey;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5px;
+    transition-duration: 0.2s;
+  }
 .footer {
     display: flex;
     justify-content: space-around;
