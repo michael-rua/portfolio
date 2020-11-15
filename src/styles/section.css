@@ -82,9 +82,8 @@ cursor: pointer;
   position: absolute;
   bottom: 10px;
   background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  background: rgba(0, 0, 0, 0.5); 
   color: #f1f1f1;
-  width: 100%;
   margin:0 auto;
   transition: .5s ease;
   opacity:0;
@@ -94,7 +93,7 @@ cursor: pointer;
   
   box-sizing: border-box;
   border-radius: 50px;
-}
+} 
 
 .work-img-container:hover .work-img-overlay {
   opacity: 1;
