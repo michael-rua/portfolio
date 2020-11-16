@@ -29,7 +29,7 @@ export default function Work () {
                 <a className='reciplan-link' target='_blank' rel="noopener noreferrer" href='https://www.reciplan.co.nz'>Go to Reciplan.co.nz</a>
               </div> */}
             </div> 
-            <p>My role in the team was implementing the technology, specifially the implemtation of React Context API, I was focussed on the functionality of the Navigation and user experience. This was a 6 day project in which we delivered a mobile first, user focussed experience</p>
+            <p>My role in the team was implementing the technology, specifically the implemtation of React Context API, I was focussed on the functionality of the Navigation and user experience. This was a 6 day project in which we delivered a mobile first, user focussed experience</p>
             <a className='reciplan-link' target='_blank' rel="noopener noreferrer" href='https://www.reciplan.co.nz'><h3>Go to Reciplan.co.nz</h3></a>
           </div>
         </div>

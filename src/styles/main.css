@@ -52,6 +52,22 @@ body, html {
   justify-content: center;
 }
 
+@media (max-width:1130px) and (min-width:1024px) {
+  .hero {
+    position: absolute;
+    opacity: 0;
+    font-size: 6rem;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Sansita Swashed', cursive;
+    /* font-family: 'Bellota', cursive; */
+    order: 1;
+    text-align: center;
+    transition: opacity 0.5s;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .content {
     padding: 75px;
