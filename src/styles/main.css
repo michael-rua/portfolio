@@ -25,6 +25,7 @@ body, html {
   order: 1;
   text-align: center;
   transition: opacity 0.5s;
+  /* color: rgb(231, 197, 133); */
   /* -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: lightslategray */
 }
