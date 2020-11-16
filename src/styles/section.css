@@ -11,8 +11,12 @@
 
 .about {
   margin-top: 100vh;
-  background-color: gray;
+  /* background-color: gray; */
   min-height: 80vh;
+  background: -webkit-linear-gradient(70deg,  #607d8b 60%, #00416A 80%);
+  background: -o-linear-gradient(70deg,  #607d8b 60%, #00416A 80%);
+  background: -moz-linear-gradient(70deg,  #607d8b 60%, #00416A 80%);
+  background: linear-gradient(70deg,  #607d8b 60%, #00416A 80%);
 
 }
 
@@ -39,7 +43,11 @@
 
 /* SERVICES */
 .services {
-  background-color: #110C11;
+  background: -webkit-linear-gradient(110deg, #888888 60%, #222222 80%);
+  background: -o-linear-gradient(110deg, #888888 60%, #222222 80%);
+  background: -moz-linear-gradient(110deg, #888888 60%, #222222 80%);
+  background: linear-gradient(110deg, #888888 60%, #222222 80%);
+  /* background-color: #110C11; */
   color: whitesmoke;
   min-height: 80vh;
 }
@@ -57,7 +65,11 @@
 }
 
 .work {
-  background-color:  gray;
+  /* background-color:  gray; */
+  background: -webkit-linear-gradient(73deg, #00416A 60%, #607d8b 80%);
+  background: -o-linear-gradient(73deg, #00416A 60%, #607d8b 80%);
+  background: -moz-linear-gradient(73deg, #00416A 60%, #607d8b 80%);
+  background: linear-gradient(73deg, #00416A 60%, #607d8b 80%);
   min-height: 80vh;
 }
 
@@ -141,8 +153,13 @@ a, a:hover, a:focus, a:active {
 text-decoration: underline;
 }
 
+
+/* CONTACT */
 .contact {
-  background-color: #110C11;
+  background: -webkit-linear-gradient(110deg, #222222 60%, #888888 80%);
+  background: -o-linear-gradient(110deg, #222222 60%, #888888 80%);
+  background: -moz-linear-gradient(110deg, #222222 60%, #888888 80%);
+  background: linear-gradient(110deg, #222222 60%, #888888 80%);
   color: whitesmoke;
   display: flex;
   min-height: 80vh;
