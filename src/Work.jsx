@@ -9,23 +9,28 @@ export default function Work () {
         <h1 className='work-title'>Work</h1>
         <div className='work-container'>
           <div className='left-work-side'>
+            <h2 style={{textDecoration:'underline'}}>Reciplan</h2>
+            <p>My experiences in Enspiral Dev Academy culminated with a final group project of an epic scale. I worked with a talented team, we decided to create a fresh, functional and useful web app that solves the problem of planning your food for the week and building a dynamic shopping list. We created <strong>Reciplan.</strong></p>
             <div className='work-img-container'>
               <img className='work-img' src='/reciplaniphone.png' alt='app screen images'/>
-              <div class="work-img-overlay"><a className='reciplan-link' target='_blank' rel="noopener noreferrer" href='https://www.reciplan.co.nz'>Go to Reciplan.co.nz</a>
-              </div>
+              {/* <div class="work-img-overlay"><a className='reciplan-link' target='_blank' rel="noopener noreferrer" href='https://www.reciplan.co.nz'>Go to Reciplan.co.nz</a>
+              </div> */}
             </div>
-            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est </p>
+            
           </div>
           <div className='right-work-side'>
-            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est </p>
+          
+          
             <div className='work-img-container'>
               <img className='work-img' src='/reciplaniphone4.png' alt='app screen images'/>
+              
             
-              <div class="work-img-overlay">
+              {/* <div class="work-img-overlay">
                 <a className='reciplan-link' target='_blank' rel="noopener noreferrer" href='https://www.reciplan.co.nz'>Go to Reciplan.co.nz</a>
-              </div>
+              </div> */}
             </div> 
-            
+            <p>My role in the team was implementing the technology, specifially the implemtation of React Context API, I was focussed on the functionality of the Navigation and user experience. This was a 6 day project in which we delivered a mobile first, user focussed experience</p>
+            <a className='reciplan-link' target='_blank' rel="noopener noreferrer" href='https://www.reciplan.co.nz'><h3>Go to Reciplan.co.nz</h3></a>
           </div>
         </div>
       </div>
