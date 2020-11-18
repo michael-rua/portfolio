@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import './styles/section.css'
+
 import { Document, Page } from 'react-pdf'
 
 export default function Services () {
@@ -8,11 +9,9 @@ const [state, setState] = useState({
   pageNumber: 1
 })
 
-// useEffect(() => {
-
-//    setState({ numPages })
-  
-// })
+ const onDocumentLoadSuccess = ({ numPages }) => {
+  setState({ numPages })
+}
 
 // const { pageNumber, numPages} = state
 
@@ -26,12 +25,13 @@ const [state, setState] = useState({
           </div>
           <div className='services-right'>
           <div>
-        <Document
-          file='/public/cv.pdf'
+        {/* <Document
+          file='cv.pdf'
+          onLoadSuccess={() => onDocumentLoadSuccess()}
         >
           <Page pageNumber={state.pageNumber} />
         </Document>
-        <p>Page {state.pageNumber} of {state.numPages}</p>
+        <p>Page {state.pageNumber} of {state.numPages}</p> */}
       </div>
           </div>
           
