@@ -21,10 +21,12 @@ const [state, setState] = useState({
         <h1 className='services-title'>Services</h1>
         <div className='services-container'>
           <div className='services-left'>
-          <p></p>
+            <h2>I offer Full stack web developer services</h2>
+            <p>I specialise in High engagement and user focussed design, giving feature rich experiences to all users. </p>
           </div>
           <div className='services-right'>
-          <div>
+            <a className='cv-link' href='https://drive.google.com/file/d/1XYnSJjyOlKtNDsZAJbLzcnM9sFCrZtfV/view?usp=sharing'>View my CV</a>
+            
         {/* <Document
           file='cv.pdf'
           onLoadSuccess={() => onDocumentLoadSuccess()}
@@ -32,7 +34,7 @@ const [state, setState] = useState({
           <Page pageNumber={state.pageNumber} />
         </Document>
         <p>Page {state.pageNumber} of {state.numPages}</p> */}
-      </div>
+            
           </div>
           
         </div>
@@ -40,3 +42,4 @@ const [state, setState] = useState({
     </div>
   )
 }
+ 
